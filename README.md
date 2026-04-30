@@ -22,38 +22,25 @@ Le service RH souhaite :
 ## 🗂️ Données utilisées
 Le projet repose sur 4 tables principales, fournies au format CSV.
 
-1️⃣ employes  
+### 1️⃣ employes  
 Informations individuelles des employés.  
-- id_employe (PK)  
-- nom, prenom  
-- poste  
-- departement_id (FK)  
-- date_embauche  
-- date_depart  
-- salaire  
 
-2️⃣ departements  
+`id_employe (PK)` `nom` `prenom` `poste` `departement_id (FK)` `date_embauche` `date_depart` `salaire`
+
+### 2️⃣ departements  
 Référentiel des départements.  
-- id_departement (PK)  
-- nom_departement  
-- manager  
-- budget  
 
-3️⃣ performances  
+`id_departement (PK)` `nom_departement` `manager` `budget`
+
+### 3️⃣ performances  
 Évaluations trimestrielles de performance.  
-- id_performance (PK)  
-- id_employe (FK)  
-- date_evaluation  
-- score  
-- objectifs_atteints  
 
-4️⃣ turnover  
+`id_performance (PK)` `id_employe (FK)` `date_evaluation` `score` `objectifs_atteints`
+
+### 4️⃣ turnover  
 Historique des départs d’employés.  
-- id_depart (PK)  
-- id_employe  
-- date_depart  
-- type_depart (volontaire / involontaire)  
-- anciennete  
+
+`id_depart (PK)` `id_employe` `date_depart` `type_depart` `anciennete`
 
 ## 🛠️ Outils & technologies
 - PostgreSQL (requêtes analytiques)
